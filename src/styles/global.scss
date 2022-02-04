@@ -1,0 +1,56 @@
+@import 'variables/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-weight: $font-regular;
+    font-size: $font-s;
+    font-style: $font-style-normal;
+    color: $text-primary;
+    letter-spacing: $char-spacing;
+    line-height: $line-spacing-s;
+}
+
+h1 {
+    font-weight: $font-bold;
+    font-size: $font-xl;
+    color: $black;
+    font-style: $font-style-normal;
+    letter-spacing: $char-spacing;
+    line-height: $line-spacing-xl;
+}
+h2 {
+    font-weight: $font-bold;
+    font-style: $font-style-normal;
+    font-size: $font-l;
+    color: $black;
+    letter-spacing: $char-spacing;
+    line-height: $line-spacing-l;
+}
+
+h3 {
+    font-weight: $font-bold;
+    font-style: $font-style-normal;
+    font-size: $font-m;
+    color: $black;
+    letter-spacing: $char-spacing;
+    line-height: $line-spacing-m;
+}
+
+h4 {
+    font-weight: $font-bold;
+    font-style: $font-style-normal;
+    font-size: $font-s;
+    color: $black;
+    letter-spacing: $char-spacing;
+    line-height: $line-spacing-s;
+}

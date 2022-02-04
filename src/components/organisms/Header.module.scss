@@ -1,0 +1,61 @@
+@import 'variables/variables.scss';
+
+.navigation {
+    padding: 42px 175px 0px 175px;
+    .navigation__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navigation__socials {
+            display: flex;
+
+            & > * {
+                margin: 0 1rem;
+            }
+        }
+
+        .navigation__menu {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+
+            .navigation__item {
+                position: relative;
+                &::after {
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: -10px;
+                    content: '';
+                    display: block;
+                    height: 1px;
+                    left: 50%;
+                    position: absolute;
+                    background: #fff;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+                &:hover:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+
+        .navigation__item {
+            list-style: none;
+            p,
+            h1 {
+                color: $text-secondary;
+            }
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+
+                .logo {
+                    color: $text-secondary;
+                }
+            }
+        }
+    }
+}
