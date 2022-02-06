@@ -9,7 +9,7 @@
         font-weight: bold;
         font-size: 25px;
 
-        @media (max-height: 705px) {
+        @media (max-height: 740px) {
             display: none;
         }
     }
@@ -17,7 +17,7 @@
         color: rgb(87, 87, 87);
         font-size: $font-xs;
         line-height: normal;
-        @media (max-height: 705px) {
+        @media (max-height: 740px) {
             display: none;
         }
     }
