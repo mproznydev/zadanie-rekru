@@ -22,9 +22,12 @@
 
             .navigation__item {
                 position: relative;
+                button p {
+                    font-size: $font-xs;
+                }
                 &::after {
                     background: none repeat scroll 0 0 transparent;
-                    bottom: -10px;
+                    bottom: 0;
                     content: '';
                     display: block;
                     height: 1px;
@@ -54,6 +57,7 @@
 
                 .logo {
                     color: $text-secondary;
+                    font-weight: $font-bold;
                 }
             }
         }

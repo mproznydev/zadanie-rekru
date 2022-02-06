@@ -1,0 +1,76 @@
+@import 'variables/variables.scss';
+.contactForm {
+    background-color: white;
+    padding: 1.5rem;
+    max-width: 400px;
+    min-width: 300px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 25px;
+
+        @media (max-height: 705px) {
+            display: none;
+        }
+    }
+    &__subtitle {
+        color: rgb(87, 87, 87);
+        font-size: $font-xs;
+        line-height: normal;
+        @media (max-height: 705px) {
+            display: none;
+        }
+    }
+    &__text {
+        font-weight: $font-bold;
+    }
+    &__checkbox {
+        display: flex;
+
+        &Label {
+            font-size: 10px;
+            margin-left: 8px;
+        }
+    }
+    &__input {
+        margin: 1rem 0;
+    }
+    &__submit {
+        margin-top: 18px;
+        width: 100%;
+        padding: 0.5rem;
+        background-color: $black;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        font-weight: $font-medium;
+        z-index: 1;
+        span {
+            letter-spacing: 2px;
+            color: $text-secondary;
+            z-index: 2;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-color: $color-secondary;
+            transition: transform 0.15s ease-in-out;
+            transform: translate(-100%);
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+            &:before {
+                transform: translate(0);
+            }
+            span {
+                color: $text-primary;
+            }
+        }
+    }
+}
